@@ -49,8 +49,7 @@ struct GenericCategoryEntryView: View {
 					.foregroundColor(Color(uiColor: UIColor(hexString: foregroundColor!)))
 					.padding(.leading, 15)
 				} else {
-					Image(image)
-				}
+                    Image(uiImage: UIImage(named: image)!)				}
 				Spacer()
 				Text(categoryText)
 					.fontWeight(.bold)

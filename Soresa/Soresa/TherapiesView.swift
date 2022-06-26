@@ -1,10 +1,3 @@
-//
-//  TherapiesView.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 26/06/22.
-//
-
 import SwiftUI
 
 
@@ -16,12 +9,18 @@ struct TherapyCategory {
 
 struct TherapiesView: View {
 	@EnvironmentObject var viewRouter: ViewRouter
-	var categories: [TherapyCategory] = [TherapyCategory(categoryText: "Calendar", image: "calendar.badge.clock", color: "4F7685" ),
-										 TherapyCategory(categoryText: "Medicines", image: "pills.fill", color: "FF2D65" ),
-										 TherapyCategory(categoryText: "Diet", image: "", color: ""),
-										 TherapyCategory(categoryText: "Allergens", image: "allergens", color: "FF9600"),
-										 TherapyCategory(categoryText: "Heartrate", image: "waveform.path.ecg.rectangle.fill", color: "FF3830"),
-										 TherapyCategory(categoryText: "History", image: "bandage.fill", color: "B330FF")
+	var categories: [TherapyCategory] = [
+        TherapyCategory(categoryText: "Calendar", image: "calendar.badge.clock", color: "4F7685" ),
+										 
+        TherapyCategory(categoryText: "Medicines", image: "pills.fill", color: "FF2D65" ),
+										 
+        TherapyCategory(categoryText: "Diet", image: "fork.knife.circle", color: "A2C211"),
+										 
+        TherapyCategory(categoryText: "Allergens", image: "allergens", color: "FF9600"),
+										 
+        TherapyCategory(categoryText: "Heartrate", image: "waveform.path.ecg.rectangle.fill", color: "FF3830"),
+										 
+        TherapyCategory(categoryText: "History", image: "bandage.fill", color: "B330FF")
     ]
 	@State var searchTerm = ""
     init() {
@@ -36,6 +35,8 @@ struct TherapiesView: View {
 		UISearchBar.appearance().tintColor = .white
 		
     }
+    @State private var showingSheet = false
+
     var body: some View {
 		NavigationView {
 			
@@ -43,26 +44,17 @@ struct TherapiesView: View {
 				Color("BackgroundWhite")
 					.edgesIgnoringSafeArea(.all)
 				VStack {
-					
-//					ZStack {}.padding()
-//					ZStack {
-//						RoundedRectangle(cornerRadius: 20)
-//							.frame(width: 352, height: 114, alignment: .center)
-//							.foregroundColor(.white)
-//						Text("Search for a doctor instantly")
-//							.font(.headline)
-//					}
-//					.padding()
 					ScrollView {
 						ForEach(categories, id:\.self.categoryText) { category in
-							
 							GenericCategoryEntryView(categoryText: category.categoryText, systemImage: category.image, foregroundColor: category.color)
 								.padding(.vertical, 5)
+                                .onTapGesture {
+                                    showingSheet.toggle()
+                                }.sheet(isPresented: $showingSheet) {
+                                    MedicineView()
+                                }
 						}
 					}
-					
-					
-					
 					.navigationTitle("Therapies")
 					.toolbar {
 						Button {

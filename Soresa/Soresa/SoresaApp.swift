@@ -48,6 +48,12 @@ struct SoresaApp: App {
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .environmentObject(viewRouter)
                     .transition(.move(edge: .top))
+                
+            case .medicine:
+                MedicineView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
+                    .transition(.move(edge: .top))
             }
         }
     }

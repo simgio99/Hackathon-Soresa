@@ -7,7 +7,8 @@ enum ViewStatus {
          onboarding,
          map,
          detail,
-         doctorList
+         doctorList,
+         medicine
 }
 
 class ViewRouter: ObservableObject {

@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 25/06/22.
-//
-
 import SwiftUI
 
 struct MainView: View {
@@ -13,14 +6,17 @@ struct MainView: View {
             MedicalRecordsView()
                 .tabItem {
                     Label("Records", systemImage: "list.dash")
+                        .foregroundColor(Color("AppBlue"))
                 }
             DoctorListView()
                 .tabItem {
-                    Label("Doctors", systemImage: "list.dash")
+                    Label("Doctors", systemImage: "stethoscope")
+                        .foregroundColor(Color("AppBlue"))
                 }
             TherapiesView()
                 .tabItem {
-                    Label("Therapy", systemImage: "list.dash")
+                    Label("Therapy", systemImage: "pills")
+                        .foregroundColor(Color("AppBlue"))
                 }
         }
     }
