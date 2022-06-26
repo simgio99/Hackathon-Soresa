@@ -11,16 +11,17 @@ import SwiftUI
 struct TherapyCategory {
 	var categoryText: String
 	var image: String
+	var color: String
 }
 
 struct TherapiesView: View {
 	@EnvironmentObject var viewRouter: ViewRouter
-    var categories: [TherapyCategory] = [TherapyCategory(categoryText: "Calendar", image: ""),
-										 TherapyCategory(categoryText: "Medicines", image: ""),
-										 TherapyCategory(categoryText: "Diet", image: ""),
-										 TherapyCategory(categoryText: "Allergens", image: ""),
-										 TherapyCategory(categoryText: "Heartrate", image: ""),
-										 TherapyCategory(categoryText: "History", image: "")
+	var categories: [TherapyCategory] = [TherapyCategory(categoryText: "Calendar", image: "calendar.badge.clock", color: "4F7685" ),
+										 TherapyCategory(categoryText: "Medicines", image: "pills.fill", color: "FF2D65" ),
+										 TherapyCategory(categoryText: "Diet", image: "", color: ""),
+										 TherapyCategory(categoryText: "Allergens", image: "allergens", color: "FF9600"),
+										 TherapyCategory(categoryText: "Heartrate", image: "waveform.path.ecg.rectangle.fill", color: "FF3830"),
+										 TherapyCategory(categoryText: "History", image: "bandage.fill", color: "B330FF")
     ]
 	@State var searchTerm = ""
     init() {
@@ -55,14 +56,14 @@ struct TherapiesView: View {
 					ScrollView {
 						ForEach(categories, id:\.self.categoryText) { category in
 							
-							GenericCategoryEntryView(categoryText: category.categoryText, systemImage: category.image)
+							GenericCategoryEntryView(categoryText: category.categoryText, systemImage: category.image, foregroundColor: category.color)
 								.padding(.vertical, 5)
 						}
 					}
 					
 					
 					
-					.navigationTitle("Therapies List")
+					.navigationTitle("Therapies")
 					.toolbar {
 						Button {
 							viewRouter.currentView = .map

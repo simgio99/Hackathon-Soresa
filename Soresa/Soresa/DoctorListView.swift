@@ -86,7 +86,7 @@ struct DoctorListView: View {
                     
                     
                     
-                    .navigationTitle("Doctor List")
+                    .navigationTitle("Doctors")
                     .toolbar {
                         Button {
                             viewRouter.currentView = .map
