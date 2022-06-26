@@ -23,6 +23,8 @@
 		D14886AC2867708900E387E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14886AB2867708900E387E7 /* Persistence.swift */; };
 		D14886AF2867708900E387E7 /* Soresa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D14886AD2867708900E387E7 /* Soresa.xcdatamodeld */; };
 		D14886B6286770EB00E387E7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14886B5286770EB00E387E7 /* LoginView.swift */; };
+		EF0B29EE2868098E00F74D9B /* DetailDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B29ED2868098E00F74D9B /* DetailDoctorView.swift */; };
+		EF0B29F028681BEE00F74D9B /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0B29EF28681BEE00F74D9B /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		D14886AB2867708900E387E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D14886AE2867708900E387E7 /* Soresa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soresa.xcdatamodel; sourceTree = "<group>"; };
 		D14886B5286770EB00E387E7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EF0B29ED2868098E00F74D9B /* DetailDoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDoctorView.swift; sourceTree = "<group>"; };
+		EF0B29EF28681BEE00F74D9B /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,9 @@
 				D14886AB2867708900E387E7 /* Persistence.swift */,
 				D10C8BA02867ED9B00E3D529 /* MapDoctorView.swift */,
 				D104139A2867F465009205E9 /* ListOfDoctorsView.swift */,
+				EF0B29ED2868098E00F74D9B /* DetailDoctorView.swift */,
 				D14886AD2867708900E387E7 /* Soresa.xcdatamodeld */,
+				EF0B29EF28681BEE00F74D9B /* map.png */,
 				D14886A82867708900E387E7 /* Preview Content */,
 			);
 			path = Soresa;
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0B29F028681BEE00F74D9B /* map.png in Resources */,
 				D14886AA2867708900E387E7 /* Preview Assets.xcassets in Resources */,
 				D14886A72867708900E387E7 /* Assets.xcassets in Resources */,
 			);
@@ -175,6 +182,7 @@
 			files = (
 				D104139B2867F465009205E9 /* ListOfDoctorsView.swift in Sources */,
 				D14886AF2867708900E387E7 /* Soresa.xcdatamodeld in Sources */,
+				EF0B29EE2868098E00F74D9B /* DetailDoctorView.swift in Sources */,
 				D10C8B9728677CC000E3D529 /* MainView.swift in Sources */,
 				D10C8B9D2867DE7400E3D529 /* TherapiesView.swift in Sources */,
 				D14886AC2867708900E387E7 /* Persistence.swift in Sources */,

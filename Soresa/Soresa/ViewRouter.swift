@@ -5,7 +5,9 @@ enum ViewStatus {
     case login,
          main,
          onboarding,
-         map
+         map,
+         detail,
+         doctorList
 }
 
 class ViewRouter: ObservableObject {
