@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D104139B2867F465009205E9 /* ListOfDoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104139A2867F465009205E9 /* ListOfDoctorsView.swift */; };
 		D10C8B95286776AC00E3D529 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B94286776AC00E3D529 /* ViewRouter.swift */; };
 		D10C8B9728677CC000E3D529 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B9628677CC000E3D529 /* MainView.swift */; };
+		D10C8B992867CE2300E3D529 /* MedicalRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B982867CE2200E3D529 /* MedicalRecordsView.swift */; };
+		D10C8B9B2867D65A00E3D529 /* DoctorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B9A2867D65A00E3D529 /* DoctorListView.swift */; };
+		D10C8B9D2867DE7400E3D529 /* TherapiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B9C2867DE7400E3D529 /* TherapiesView.swift */; };
+		D10C8B9F2867E19200E3D529 /* DoctorMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B9E2867E19200E3D529 /* DoctorMapView.swift */; };
+		D10C8BA12867ED9B00E3D529 /* MapDoctorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8BA02867ED9B00E3D529 /* MapDoctorView.swift */; };
 		D14886A32867708400E387E7 /* SoresaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14886A22867708400E387E7 /* SoresaApp.swift */; };
 		D14886A52867708400E387E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14886A42867708400E387E7 /* ContentView.swift */; };
 		D14886A72867708900E387E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14886A62867708900E387E7 /* Assets.xcassets */; };
@@ -19,8 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D104139A2867F465009205E9 /* ListOfDoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDoctorsView.swift; sourceTree = "<group>"; };
 		D10C8B94286776AC00E3D529 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		D10C8B9628677CC000E3D529 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D10C8B982867CE2200E3D529 /* MedicalRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordsView.swift; sourceTree = "<group>"; };
+		D10C8B9A2867D65A00E3D529 /* DoctorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorListView.swift; sourceTree = "<group>"; };
+		D10C8B9C2867DE7400E3D529 /* TherapiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapiesView.swift; sourceTree = "<group>"; };
+		D10C8B9E2867E19200E3D529 /* DoctorMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorMapView.swift; sourceTree = "<group>"; };
+		D10C8BA02867ED9B00E3D529 /* MapDoctorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDoctorView.swift; sourceTree = "<group>"; };
 		D148869F2867708400E387E7 /* Soresa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soresa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14886A22867708400E387E7 /* SoresaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoresaApp.swift; sourceTree = "<group>"; };
 		D14886A42867708400E387E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,8 +78,14 @@
 				D14886B5286770EB00E387E7 /* LoginView.swift */,
 				D14886A42867708400E387E7 /* ContentView.swift */,
 				D10C8B9628677CC000E3D529 /* MainView.swift */,
+				D10C8B9E2867E19200E3D529 /* DoctorMapView.swift */,
+				D10C8B982867CE2200E3D529 /* MedicalRecordsView.swift */,
+				D10C8B9A2867D65A00E3D529 /* DoctorListView.swift */,
+				D10C8B9C2867DE7400E3D529 /* TherapiesView.swift */,
 				D14886A62867708900E387E7 /* Assets.xcassets */,
 				D14886AB2867708900E387E7 /* Persistence.swift */,
+				D10C8BA02867ED9B00E3D529 /* MapDoctorView.swift */,
+				D104139A2867F465009205E9 /* ListOfDoctorsView.swift */,
 				D14886AD2867708900E387E7 /* Soresa.xcdatamodeld */,
 				D14886A82867708900E387E7 /* Preview Content */,
 			);
@@ -152,13 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D104139B2867F465009205E9 /* ListOfDoctorsView.swift in Sources */,
 				D14886AF2867708900E387E7 /* Soresa.xcdatamodeld in Sources */,
 				D10C8B9728677CC000E3D529 /* MainView.swift in Sources */,
+				D10C8B9D2867DE7400E3D529 /* TherapiesView.swift in Sources */,
 				D14886AC2867708900E387E7 /* Persistence.swift in Sources */,
+				D10C8B9B2867D65A00E3D529 /* DoctorListView.swift in Sources */,
+				D10C8B9F2867E19200E3D529 /* DoctorMapView.swift in Sources */,
+				D10C8BA12867ED9B00E3D529 /* MapDoctorView.swift in Sources */,
 				D14886A52867708400E387E7 /* ContentView.swift in Sources */,
 				D10C8B95286776AC00E3D529 /* ViewRouter.swift in Sources */,
 				D14886B6286770EB00E387E7 /* LoginView.swift in Sources */,
 				D14886A32867708400E387E7 /* SoresaApp.swift in Sources */,
+				D10C8B992867CE2300E3D529 /* MedicalRecordsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

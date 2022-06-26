@@ -23,13 +23,17 @@ struct SoresaApp: App {
                 ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .transition(.move(edge: .top))
+                
             case .main:
                 ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
                     .transition(.move(edge: .top))
-            }
-            
                 
+            case .map:
+                MapDoctorView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .transition(.move(edge: .top))
+            }
         }
     }
 }

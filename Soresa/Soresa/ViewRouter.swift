@@ -1,15 +1,11 @@
-//
-//  ViewRouter.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 25/06/22.
-//
-
 import Foundation
 
 
 enum ViewStatus {
-    case login, main, onboarding
+    case login,
+         main,
+         onboarding,
+         map
 }
 
 class ViewRouter: ObservableObject {
