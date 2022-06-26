@@ -44,7 +44,7 @@ struct TherapiesView: View {
                     ScrollView {
                         ForEach(categories, id:\.self.categoryText) { category in
                             
-                            DoctorCategoryEntryView(categoryText: category.categoryText, image: category.image)
+                            GenericCategoryEntryView(categoryText: category.categoryText, image: category.image)
                                 .padding(.vertical, 5)
                         }
                     }
@@ -71,3 +71,4 @@ struct TherapiesView_Previews: PreviewProvider {
         TherapiesView()
     }
 }
+

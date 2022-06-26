@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B55B48286816790088004A /* GenericCategoryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B55B47286816790088004A /* GenericCategoryEntryView.swift */; };
 		D104139B2867F465009205E9 /* ListOfDoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104139A2867F465009205E9 /* ListOfDoctorsView.swift */; };
 		D10C8B95286776AC00E3D529 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B94286776AC00E3D529 /* ViewRouter.swift */; };
 		D10C8B9728677CC000E3D529 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8B9628677CC000E3D529 /* MainView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B55B47286816790088004A /* GenericCategoryEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCategoryEntryView.swift; sourceTree = "<group>"; };
 		D104139A2867F465009205E9 /* ListOfDoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDoctorsView.swift; sourceTree = "<group>"; };
 		D10C8B94286776AC00E3D529 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		D10C8B9628677CC000E3D529 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				D10C8B9E2867E19200E3D529 /* DoctorMapView.swift */,
 				D10C8B982867CE2200E3D529 /* MedicalRecordsView.swift */,
 				D10C8B9A2867D65A00E3D529 /* DoctorListView.swift */,
+				13B55B47286816790088004A /* GenericCategoryEntryView.swift */,
 				D10C8B9C2867DE7400E3D529 /* TherapiesView.swift */,
 				D14886A62867708900E387E7 /* Assets.xcassets */,
 				D14886AB2867708900E387E7 /* Persistence.swift */,
@@ -179,6 +182,7 @@
 				D10C8B9F2867E19200E3D529 /* DoctorMapView.swift in Sources */,
 				D10C8BA12867ED9B00E3D529 /* MapDoctorView.swift in Sources */,
 				D14886A52867708400E387E7 /* ContentView.swift in Sources */,
+				13B55B48286816790088004A /* GenericCategoryEntryView.swift in Sources */,
 				D10C8B95286776AC00E3D529 /* ViewRouter.swift in Sources */,
 				D14886B6286770EB00E387E7 /* LoginView.swift in Sources */,
 				D14886A32867708400E387E7 /* SoresaApp.swift in Sources */,
