@@ -25,8 +25,9 @@ struct MedicalRecordsView: View {
                     Image("qr")
                         .resizable()
                         .scaledToFit()
-                        .frame(height:266)
-                    Spacer()
+                        .frame(width: 500,height:400)
+                        .padding(.bottom, -70)
+                        .padding(.top, -70)
                     VStack(spacing: 15) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10).frame(width: 350, height: 50)

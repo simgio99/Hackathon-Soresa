@@ -55,7 +55,7 @@ struct TherapiesView: View {
                                 }
 						}
 					}
-					.navigationTitle("Therapies")
+					.navigationTitle("Therapy")
 					.toolbar {
 						Button {
 							viewRouter.currentView = .map
