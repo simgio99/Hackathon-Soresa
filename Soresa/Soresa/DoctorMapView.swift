@@ -1,10 +1,3 @@
-//
-//  DoctorMapView.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 26/06/22.
-//
-
 import SwiftUI
 
 struct DoctorEntryView: View {
@@ -26,13 +19,13 @@ struct DoctorEntryView: View {
         }
     }
 }
-struct DoctorMapView: View {
+struct MapDoctorView: View {
     @State var overlayYPos: CGFloat = 950
     @State var searchTerm = ""
     
     var body: some View {
         VStack {
-            Color.red
+            Image(uiImage: UIImage(named: "mapDoctor")!)
                 .edgesIgnoringSafeArea(.all)
                 .overlay(alignment: .bottom) {
                     ZStack(alignment: .top) {
@@ -66,8 +59,8 @@ struct DoctorMapView: View {
     }
 }
 
-struct DoctorMapView_Previews: PreviewProvider {
+struct MapDoctorView_Previews: PreviewProvider {
     static var previews: some View {
-        DoctorMapView()
+        MapDoctorView()
     }
 }
