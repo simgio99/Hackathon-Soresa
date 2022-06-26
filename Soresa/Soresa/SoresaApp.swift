@@ -22,16 +22,31 @@ struct SoresaApp: App {
             case .onboarding:
                 ContentView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
                     .transition(.move(edge: .top))
                 
             case .main:
-                ContentView()
+                MainView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
                     .transition(.move(edge: .top))
                 
             case .map:
                 MapDoctorView()
                     .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
+                    .transition(.move(edge: .top))
+                
+            case .detail:
+                DetailDoctorView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
+                    .transition(.move(edge: .top))
+                
+            case .doctorList:
+                ListOfDoctorsView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .environmentObject(viewRouter)
                     .transition(.move(edge: .top))
             }
         }

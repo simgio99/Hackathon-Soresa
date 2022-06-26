@@ -1,10 +1,3 @@
-//
-//  DoctorListView.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 26/06/22.
-//
-
 import SwiftUI
 
 struct DoctorCategoryEntryView: View {
@@ -26,6 +19,7 @@ struct DoctorCategoryEntryView: View {
                     .fontWeight(.bold)
                     .font(.title2)
                     .background(.clear)
+                    .foregroundColor(.black)
                 Spacer()
             }
                 .frame(maxWidth: 370, idealHeight: 60)
@@ -81,9 +75,12 @@ struct DoctorListView: View {
                     .padding()
                     ScrollView {
                         ForEach(categories, id:\.self.categoryText) { category in
-                            
-                            DoctorCategoryEntryView(categoryText: category.categoryText, image: category.image)
-                                .padding(.vertical, 5)
+                            Button {
+                                viewRouter.currentView = .doctorList
+                            } label: {
+                                DoctorCategoryEntryView(categoryText: category.categoryText, image: category.image)
+                                    .padding(.vertical, 5)
+                            }
                         }
                     }
                     

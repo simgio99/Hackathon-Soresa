@@ -18,14 +18,17 @@ struct DoctorListEntryView: View {
                     .font(.title2)
                     .background(.clear)
                     .padding(.top)
+                    .foregroundColor(.black)
                 
                 Text(date)
                     .font(.title2)
                     .background(.clear)
+                    .foregroundColor(.black)
                 
                 Text(role)
                     .font(.title2)
                     .background(.clear)
+                    .foregroundColor(.black)
                 Spacer()
                 Text(availability)
                     .font(.title2)
@@ -62,12 +65,16 @@ struct ListOfDoctorsView: View {
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack{
-                        DoctorListEntryView(
-                            name: "Dr. Antonella Mazzini",
-                            date: "04/09/1987",
-                            role: "MD Audiologist, ENT",
-                            availability: "Available"
-                        )
+                        Button {
+                            viewRouter.currentView = .detail
+                        } label: {
+                            DoctorListEntryView(
+                                name: "Dr. Antonella Mazzini",
+                                date: "04/09/1987",
+                                role: "MD Audiologist, ENT",
+                                availability: "Available"
+                            )
+                        }
                         
                         DoctorListEntryView(
                             name: "Dr. Luciana Gambrino",
