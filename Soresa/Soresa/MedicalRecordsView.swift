@@ -1,13 +1,4 @@
-//
-//  MedicalRecordsView.swift
-//  Soresa
-//
-//  Created by Simone Giordano on 26/06/22.
-//
-
 import SwiftUI
-
-
 
 let coloredNavAppearance = UINavigationBarAppearance()
 struct MedicalRecordsView: View {
@@ -23,17 +14,12 @@ struct MedicalRecordsView: View {
             UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
             UISearchBar.appearance().barTintColor = UIColor(Color("BackgroundBlue"))
             UISearchBar.appearance().tintColor = .white
-        
-
         }
+    
     var body: some View {
        
             NavigationView {
-                
                 VStack {
-                    
-                   
-                    
                     Spacer()
                         .frame(height: 100)
                     Image("qr")
@@ -41,28 +27,66 @@ struct MedicalRecordsView: View {
                         .scaledToFit()
                         .frame(height:266)
                     Spacer()
-                    HStack(spacing: 80) {
-                        Image("heart")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 44)
-                        Image("phone")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 44)
-                        Image("printer")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height:44)
-                            
+                    VStack(spacing: 15) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10).frame(width: 350, height: 50)
+                                .foregroundColor(Color("AppBlue"))
+                            HStack {
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                .frame(height: 22)
+                                .foregroundColor(.white)
+                                .padding(.leading, 25)
+                                .padding(.trailing, 15)
+                                Text("Records")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 23))
+                                Spacer()
+                            }
+                        }
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10).frame(width: 350, height: 50)
+                                .foregroundColor(Color("AppBlue"))
+                            HStack {
+                                Image(systemName: "phone")
+                                    .resizable()
+                                    .scaledToFit()
+                                .frame(height: 22)
+                                .foregroundColor(.white)
+                                .padding(.leading, 25)
+                                .padding(.trailing, 15)
+                                Text("Emergency Numbers")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 23))
+                                Spacer()
+                            }
+                        }
+
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10).frame(width: 350, height: 50)
+                                .foregroundColor(Color("AppBlue"))
+                            HStack {
+                                Image(systemName: "printer")
+                                    .resizable()
+                                    .scaledToFit()
+                                .frame(height: 22)
+                                .foregroundColor(.white)
+                                .padding(.leading, 25)
+                                .padding(.trailing, 15)
+                                Text("Print the QR Code")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 23))
+                                Spacer()
+                            }
+                        }
+
                     }
                     .padding(.vertical, 40)
                 }
-                
-                
                 .navigationTitle("Medical Records")
-            
-        } //.searchable(text: $searchTerm)
+        }
     }
 }
 
